@@ -8,7 +8,7 @@
 
 - 媒体接入信通院 `oaid-sdk`，在初始化的时候可以通过CustomController里面的getOaid()传入获取到的oaid
 
-- ***<font color='blue'>官网后台：</font>***https://gdsmilemg.datads.cn/
+- <strong color='blue'>官网后台：</strong>https://gdsmilemg.datads.cn/
 
   
 
