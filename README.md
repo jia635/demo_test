@@ -991,7 +991,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《瀑布流管理》--->《选择应用》---->《选择广告位》--->《添加代码位》
 
-<img src="./imgs/gm_addcodeid.png"  align="left" style="width: 90%; ">
+<img src="./imgs/gm_addcodeid.png"  align="left" style="width: 100%; height = '100px' ">
 
 ### 步骤4：代码工程添加 依赖
 
