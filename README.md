@@ -925,7 +925,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《聚合管理》--->《选择应用》---->《选择广告位》--->《添加广告源》
 
-<img src="./imgs/taku_addcodeid.png"  align="left" style="max-width: 600px; width: 70%; ">
+<img src="./imgs/taku_addcodeid.png"  align="left" style="max-width: 600px; width: 90%; ">
 
 ***步骤4：代码工程添加 依赖***
 
@@ -953,7 +953,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 <img src="./imgs/gm_addnetwork.png"   height="300" align="left" style="margin-top: 10px;"><br>
 
-***<img src="./imgs/gm_addadapter.png"   align="left" style="max-width: 600px; width: 70%; ">***
+***<img src="./imgs/gm_addadapter.png"   align="left" style="max-width: 600px; width: 90%; ">***
 
 
 
@@ -983,7 +983,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《应用管理》--->《选择应用》--->《添加广告网络》
 
-<img src="./imgs/gm_addacount.png"  align="left" style="max-width: 600px; width: 70%; ">
+<img src="./imgs/gm_addacount.png"  align="left" style="max-width: 600px; width: 90%; ">
 
 
 
@@ -991,15 +991,59 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《瀑布流管理》--->《选择应用》---->《选择广告位》--->《添加代码位》
 
-<img src="./imgs/gm_addcodeid.png"  align="left" style="max-width: 600px; width: 80%; ">
+<img src="./imgs/gm_addcodeid.png"  align="left" style="max-width: 600px; width: 90%; ">
 
-***步骤4：代码工程添加 依赖***
+### 步骤4：代码工程添加 依赖
 
 工程代码中放入adgain_gromore_adapter_4.2.0.aar和 adgain-sdk-4.2.0.aar 文件及配置依赖AAR依赖即可
 
+### 步骤5：bidding价格回传
 
+**<font color='red'>注意：</font>**Gromore  IMediationAdSlot 的 isBidNotify 设置为true,竞败时候回传价格都为-1，为无效竞价回传，会影响Adgain 的出价和填充，需要通过Adgain 封装的工具类 GMBiddingUtil进行价格回传
 
+***开屏回传***
 
+```java
+CSJSplashAd.SplashAdListener() {
+    @Override
+    public void onSplashAdShow(CSJSplashAd csjSplashAd) {
+        GMBiddingUtil.gmNotifyLoss(csjSplashAd);
+    }
+```
+
+插屏回传***
+
+```java
+TTFullScreenVideoAd.FullScreenVideoAdInteractionListener() {
+
+    public void onAdShow() {
+        GMBiddingUtil.gmNotifyLoss(mTTFullScreenVideoAd);
+        Log.d(Const.TAG, "InterstitialFull onAdShow");
+    }
+```
+
+***激励视频回传***
+
+```java
+TTRewardVideoAd.RewardAdInteractionListener() {
+    @Override
+
+    public void onAdShow() {
+        Log.i(Const.TAG, "reward show");
+        GMBiddingUtil.gmNotifyLoss(mTTRewardVideoAd);
+    }
+```
+
+***信息流回传***
+
+```java
+ MediationExpressRenderListener() {
+    @Override
+    public void onAdShow() {
+        Log.d(tag, "feed express show");
+        GMBiddingUtil.gmNotifyLoss(mTTFeedAd);
+    }
+```
 
 ## 十一、 测试广告位ID
 
@@ -1016,5 +1060,4 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 | 信息流自渲染ID | 11001846 |
 | 信息流模板ID   | 11001804 |
 | 信息流模板ID1   | 110018041 |
-
 
