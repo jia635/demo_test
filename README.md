@@ -39,7 +39,7 @@ repositories {
 }
 dependencies {
 	// 集成AdGain SDK需导入的aar
-	implementation(name: 'adgain-sdk-4.2.0', ext: 'aar')
+	implementation(name: 'adgain-sdk-4.2.1', ext: 'aar')
 }
 ```
 
@@ -70,6 +70,8 @@ dependencies {
 
 
 ---
+
+
 
 ## 二、SDK初始化
 
@@ -567,6 +569,8 @@ if (mRewardAd != null) {
 | onRewardAdClosed()                 | 广告关闭                                                     |
 | onAdSkip()                         | 点击广告跳过                                                 |
 
+
+
 ## 六、信息流广告
 
 **6.1 信息流加载**
@@ -933,7 +937,7 @@ https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/topon
 
 《聚合管理》--->《选择应用》---->《选择广告位》--->《添加广告源》
 
-<img src="./imgs/taku_addcodeid.png"  align="left" style="max-width: 600px; width: 90%; ">
+<img src="./imgs/taku_addcodeid.png"  align="left" style="width: 90%; ">
 
 ***步骤4：代码工程添加 依赖***
 
