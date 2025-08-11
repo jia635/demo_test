@@ -862,7 +862,7 @@ android.useAndroidX=true
 
 《聚合管理》--->《广告网络》--->《管理自定义广告网络》--->《自定义广告网络》
 
-<img src="./imgs/tobid_addnetwork.png" align="left" style="max-width: 600px; width: 70%; ">
+<img src="./imgs/tobid_addnetwork.png" align="left" style="max-width: 600px; width: 100%; ">
 
 ### 步骤2：应用管理--->APP添加关联广告平台
 
@@ -880,7 +880,7 @@ android.useAndroidX=true
 
 《聚合管理》--->《瀑布流管理》--->《选择某一个聚合广告位》--->《添加广告源》--->《选择Adgain》
 
-<img src="./imgs/tobid_codeid.png" align="left"  style="max-width: 600px; width: 70%; ">
+<img src="./imgs/tobid_codeid.png" align="left"  style="max-width: 600px; width: 100%; ">
 
 <div></div>
 
@@ -951,9 +951,9 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 ### 步骤1：添加自定义网络<br>
 
-<img src="./imgs/gm_addnetwork.png"   height="300" align="left" style="margin-top: 10px;"><br>
+<img src="./imgs/gm_addnetwork.png"   height="300" align="left" style="margin-top: 10px;">
 
-***<img src="./imgs/gm_addadapter.png"   align="left" style="max-width: 600px; width: 90%; ">***
+***<img src="./imgs/gm_addadapter.png"   align="left" style=" width: 100%; ">***
 
 
 
@@ -983,7 +983,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《应用管理》--->《选择应用》--->《添加广告网络》
 
-<img src="./imgs/gm_addacount.png"  align="left" style="max-width: 600px; width: 90%; ">
+<img src="./imgs/gm_addacount.png"  align="left" style=" width: 100%; ">
 
 
 
@@ -991,7 +991,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《瀑布流管理》--->《选择应用》---->《选择广告位》--->《添加代码位》
 
-<img src="./imgs/gm_addcodeid.png"  align="left" style="max-width: 600px; width: 90%; ">
+<img src="./imgs/gm_addcodeid.png"  align="left" style="max-width: 900px; width: 90%; ">
 
 ### 步骤4：代码工程添加 依赖
 
