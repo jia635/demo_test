@@ -937,7 +937,7 @@ https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/topon
 
 《聚合管理》--->《选择应用》---->《选择广告位》--->《添加广告源》
 
-<img src="./imgs/taku_addcodeid.png"  align="left" style="width: 90%; ">
+<img src="./imgs/taku_addcodeid.png"  align="left" style="width: 100%; ">
 
 ***步骤4：代码工程添加 依赖***
 
