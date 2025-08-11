@@ -3,10 +3,14 @@
 **注意：**
 
 - 本 SDK 最低兼容 `Android API 21（Android 5.0）`
+
 - 竞胜竞败回传：AdGain平台根据媒体传回来的竞胜竞败价格，通过相应算法自动提高出价来获得广告曝光，媒体RTB时一定要调用，否则会导致价格出不上去。
+
 - 媒体接入信通院 `oaid-sdk`，在初始化的时候可以通过CustomController里面的getOaid()传入获取到的oaid
 
+- ***<font color='blue'>官网后台：</font>***https://gdsmilemg.datads.cn/
 
+  
 
 ## 一、导入SDK依赖
 
@@ -856,7 +860,9 @@ android.useAndroidX=true
 
 应用维度参数的key填appId，注意大小写。
 
-如果使用源代码形式；可下载参考Tobid适配器源码：源码地址
+如果使用源代码形式；可下载参考Tobid适配器源码：***[源码地址](https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/sigmob/ToBidDemo-Android-Beta)***
+
+https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/sigmob/ToBidDemo-Android-Beta
 
 ### 步骤1：添加自定义网络
 
@@ -894,7 +900,9 @@ android.useAndroidX=true
 
 Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
-**自定义适配器aar文件，添加：adgain_topon_adapter_4.2.0.aar文件**
+如果想源码形式依赖，可下载[***自定义源码：***](https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/topon)自行修改内容
+
+https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/topon
 
 **自定义广告源adapter参数**
 
@@ -938,6 +946,10 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 **有需要可以找SDK开发者索要aar文件**
 
 **自定义适配器aar文件，添加：adgain_gromore_adapter_4.2.0.aar文件**
+
+如果想源码形式依赖，可下载[***自定义源码：***](https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/gromore)自行修改内容
+
+https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/gromore
 
 **自定义广告源adapter参数**
 
@@ -991,7 +1003,7 @@ Topon(Taku)自定义广告接入地址：https://help.takuad.com/docs/4M5AIa
 
 《瀑布流管理》--->《选择应用》---->《选择广告位》--->《添加代码位》
 
-<img src="./imgs/gm_addcodeid.png"  align="left" style="width: 100%; height = '100px' ">
+<img src="./imgs/gm_addcodeid.png"  align="left" style="width: 100%; height:auto ">
 
 ### 步骤4：代码工程添加 依赖
 
