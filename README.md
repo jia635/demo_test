@@ -1015,7 +1015,7 @@ https://github.com/one-piece-official/AdGainSDK-Adapter/tree/main/gromore
 
 ### 步骤5：bidding价格回传
 
-**<font color='red'>注意：</font>**Gromore  IMediationAdSlot 的 isBidNotify 设置为true,竞败时候回传价格都为-1，为无效竞价回传，会影响Adgain 的出价和填充，需要通过Adgain 封装的工具类 GMBiddingUtil进行价格回传
+<strong color='red'>注意：</strong>Gromore  IMediationAdSlot 的 isBidNotify 设置为true,竞败时候回传价格都为-1，为无效竞价回传，会影响Adgain 的出价和填充，需要通过Adgain 封装的工具类 GMBiddingUtil进行价格回传
 
 ***开屏回传***
 
